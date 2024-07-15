@@ -1,0 +1,146 @@
+body{
+    font-family: "Cera Pro";
+    width: 500px;
+    height: 656px;
+}
+/*header*/
+.group{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 157px;
+    height: 16px;
+    margin: 52px 171px 40px 172px;
+}
+
+.login{
+    width: 52px;
+    height: 16px;
+    font-size: 20px;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 1);
+    margin: 52px 12px 40px 172px;
+}
+
+.i{
+    width: 5px;
+    height: 16px;
+    font-size: 18px;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 1);
+    margin: 52px 10px 40px 12px;
+}
+
+.register{
+    width: 78px;
+    height: 16px;
+    font-size: 20px;
+    line-height: 16px;
+    color:rgba(70, 163, 88, 1);
+    margin: 52px 171px 40px 10px;
+}
+/*main*/
+.text_enter{
+    width: 300px;
+    height: 16px;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 1);
+    padding: 40px 100px 14px 100px;
+}
+
+.width_height{
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-size: 13px;
+    line-height: 16px;
+
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background: rgba(255, 255, 255, 1);
+}
+
+.username{
+    width: 65px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color:rgba(165, 165, 165, 1);
+    margin: 14px 100px 16px 100px;
+    padding: 12px 221px 12px 14px;
+    border: 1px solid rgba(234, 234, 234, 1);
+}
+
+.enter_your_email{
+    width: 160px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color:rgba(165, 165, 165, 1);
+    margin: 16px 100px 16px 100px;
+    padding:  12px 126px 12px 14px; 
+    border: 1px solid rgba(234, 234, 234, 1);
+}
+
+.password{
+    width: 62px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color:rgba(165, 165, 165, 1);
+    margin: 16px 100px 16px 100px;
+    padding: 12px 224px 12px 14px;
+    border: 1px solid rgba(234, 234, 234, 1);   
+}   
+
+.confirm_password{
+    width: 118px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color:rgba(165, 165, 165, 1);
+    margin: 16px 100px 41px 100px;
+    padding: 12px 168px 12px 14px; 
+    border: 1px solid rgba(234, 234, 234, 1);
+}
+
+.button_register{
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;    
+    width: 300px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 16px;
+    background: rgba(70, 163, 88, 1);
+    color: rgba(255, 255, 255, 1);
+    margin: 41px 100px 36px 100px;
+    padding: 16px 118px 13px 119px;
+}
+
+/*footer*/
+.or_register_with{
+    width: 300px;
+    height: 16px;
+    font-size: 13px;
+    line-height: 16px;
+    color:rgba(61, 61, 61, 1);
+    margin: 36px 202px 27px 203px;
+}
+
+.google{
+    color:rgba(114, 114, 114, 1);
+    margin: 27px 100px 15px 100px;
+    padding: 10px 68px 10px 69px; 
+}
+
+.facebook{
+    color:rgba(114, 114, 114, 1);
+    margin: 15px 100px 50px 100px;
+    padding: 11px 63px 9px 64px;
+}
+
+

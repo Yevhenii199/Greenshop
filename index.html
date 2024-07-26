@@ -1,58 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/styles.css">
-    <title>greenshop</title>
-</head>
-<body>
-    <header>
-        <div class="group" >
-            <p class="login">
-                Login
-            </p>
-            <p class="i">
-                |
-            </p>
-            <p class="register" >
-                Register
-            </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100vh;
+      }
+      header {
+        padding-top: 30px;
+        font-size: 0;
+        padding-bottom: 18px;
+        border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+        img {
+          vertical-align: middle;
+        }
+      }
+      nav {
+        font-size: 16px;
+        display: inline-block;
+        width: calc(100% - 250px);
+        text-align: center;
+        padding-right: 150px;
+        a {
+          padding-bottom: 28px;
+          color: black;
+          text-decoration: none;
+          font-weight: 400;
+        }
+        a:not(:last-child) {
+          margin-right: 50px;
+        }
+        a.active {
+          font-weight: bold;
+          border-bottom: 3px solid rgba(70, 163, 88, 1);
+        }
+      }
+
+      .btn {
+        background: rgba(70, 163, 88, 1);
+        color: white;
+        border-radius: 6px;
+        padding: 8px 16px;
+      }
+
+      .login-btn {
+        display: inline-block;
+        width: 100px;
+        img {
+          vertical-align: middle;
+          margin-top: -2px;
+          margin-right: 4px;
+        }
+      }
+      .shop-btn {
+        padding: 11px 26px 9px;
+        margin-top: 44px;
+      }
+
+      main {
+        margin-top: 12px;
+        background: linear-gradient(
+          97.77deg,
+          rgba(245, 245, 245, 0.5) -23.46%,
+          rgba(245, 245, 245, 0.5) 107.51%
+        );
+        font-size: 0;
+      }
+      .left-side,
+      .right-side {
+        font-size: 16px;
+        display: inline-block;
+      }
+      .left-side {
+        padding: 68px 50px 85px 40px;
+        h1 {
+          font-size: 70px;
+          line-height: 70px;
+          text-transform: uppercase;
+          margin: 8px 0 5px;
+          span {
+            color: rgba(70, 163, 88, 1);
+          }
+        }
+      }
+      .right-side {
+        width: 507px;
+        vertical-align: top;
+        position: relative;
+        .second-img {
+          position: absolute;
+          bottom: 20px;
+          left: 50px;
+        }
+      }
+      .left-side {
+        width: calc(100% - 507px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="./images/logo.svg" alt="logo" width="150" height="34" />
+        <nav>
+          <a href="#" class="active">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Plant Care</a>
+          <a href="#">Blogs</a>
+        </nav>
+        <button class="btn login-btn">
+          <img src="./images/login.svg" alt="login icon" width="20" height="20" />
+          <span>Login</span>
+        </button>
+      </header>
+
+      <main>
+        <div class="left-side">
+          <h3>Welcome to GreenShop</h3>
+          <h1>Let’s Make a Better <span>Planet</span></h1>
+          <p>
+            We are an online plant shop offering a wide range of cheap and
+            trendy plants. Use our plants to create an unique Urban Jungle.
+            Order your favorite plants!
+          </p>
+          <button class="btn shop-btn">Shop now</button>
         </div>
-    </header>
-    <main>
-        <p class="text_enter">
-            Enter your email and password to register.
-        </p>
-        <form>
-            <div>
-                <input class="username width_height" type="text" name="name" placeholder="Username" required>
-                <input class="enter_your_email width_height" type="email" name="email" placeholder="Enter your email address" required>
-                <input class="password width_height" type="text" name="name" placeholder="Password" required>
-                <input class="confirm_password width_height" type="text" name="name" placeholder="Confirm Password" required>
-            </div>
-            <button class="button_register">
-                Register
-            </button>
-        </form>
-    </main>
-    <footer>
-            <p class="or_register_with" >
-             Or register with
-             </p>
-             <button class="google width_height" type="button" name="Continue with Google">
-                <img src="images/google.svg" alt="google">
-                Continue with Google
-             </button>
-             <button class="facebook width_height" type="button" name="Continue with Facebook" >
-                <img src="images/facebook.svg" alt="facebook">
-               Continue with Facebook
-             </button>
-             
-    </footer>
-</body>
+        <div class="right-side">
+          <img
+            class="second-img"
+            src="./images/flower__small.png"
+            alt="second img"
+            width="135"
+            height="135"
+            margin-bottom="50px"
+          />
+          <img
+            src="./images/flower__big.png"
+            alt="main image"
+            width="507"
+            height="450"
+          />
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

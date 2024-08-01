@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: "CeraPro", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+/* div_find_more */
+.div_find_more{
+    display: flex;
+    margin-top: 69px;
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 28px;
+}
+
+.information_about_flowers{
+    display: flex;
+    font-weight: 900;
+    max-width: 586px;
+    text-align: justify;
+  }
+
+.inf{
+    padding-top: 89px;
+    display: block;
+    text-align: right;
+}
+
+.p_flowers{
+    padding-left: 110px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3D3D3D;
+}
+
+ .p_online_plant_shop{
+     font-weight: 400;
+     width: 292px;
+     font-size: 14px;
+     line-height: 24px;
+     text-align: right;
+     color: #727272;
+ } 
+
+ .button{
+     margin-top: 25px ;
+     font-weight: 500;
+     width: 140px;
+     height: 40px;
+     border-radius: 6px;
+     background: #46A358;
+     color: #FFFFFF;
+ }
+
+ /* div_blog_posts */
+ .div_blog_posts{
+    margin: 138px 119px 68px 119px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 1202px;
+    height: 447px;
+    top: 440px;
+ }
+
+ .blog_posts{
+    padding-left: 490px;
+    padding-right: 491px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 16px;
+    color:#3D3D3D;
+ }
+
+ .online_plant_shop{
+    padding-left: 322px;
+    padding-right: 323px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+ }
+
+ .information{
+    display: block;
+    width: 268px;
+    height: 362px;
+ }
+
+ .p_september{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    color:#46A358;
+ }
+
+ .p_text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+    color: #3D3D3D;
+ }
+
+ .p_cacti{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #727272;
+ }
+   
+ .read_more{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   text-align: left;
+   color:#3D3D3D;
+   text-decoration: none;
+ }
+
+ .div_inf{
+    display: flex;
+    gap: 30px;
+ }

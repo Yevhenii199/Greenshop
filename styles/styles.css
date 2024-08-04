@@ -5,131 +5,140 @@
     outline: none;
     box-sizing: border-box;
   }
-
 body{
     font-family: "CeraPro", sans-serif;
-    max-width: 1202px;
-    /* margin: 0 auto;
-    height: 100vh; */
   }
 
-/* div_find_more */
-.div_find_more{
+/* header */
+header{
     display: flex;
-    margin-top: 69px;
-    margin-left: 120px;
-    margin-right: 120px;
-    gap: 28px;
+    padding-top: 171px;
+    padding-left: 105px;
+    padding-right: 107px;
+    justify-content: space-between;
 }
-
-.information_about_flowers{
-    display: flex;
-    font-weight: 900;
-    max-width: 586px;
-    text-align: justify;
-  }
-
-  .img_summer_cactus{
-   width: 287px;
-   height: 292px;
-  }
-
-  .img_styling_trends{
-   width: 289px;
-   height: 287px;
-  }
-
-.inf{
-    padding-top: 89px;
-    padding-right: 35px;
-    display: block;
-    text-align: right;
+.div_list_left{
+   display: flex;
+   gap: 37px;
 }
-
-.p_flowers{
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 24px;
-    color: #3D3D3D;
-}
-
- .p_online_plant_shop{
-     font-weight: 400;
-     width: 292px;
-     font-size: 14px;
-     line-height: 24px;
-     color: #727272;
- } 
-
- .button{
-     margin-top: 25px ;
-     font-weight: 500;
-     width: 140px;
-     height: 40px;
-     border-radius: 6px;
-     background: #46A358;
-     color: #FFFFFF;
- }
-
- /* div_blog_posts */
- .div_blog_posts{
-    margin: 138px 119px 68px 119px;
- }
-
- .blog_posts{
-    margin-top: 138px;
-    margin-left: 496px;
+.all_plants{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 15px;
     line-height: 16px;
-    color:#3D3D3D;
- }
-
- .online_plant_shop{
-    margin-top: 15px;
-    margin-bottom: 10px;
-    margin-left: 322px;
-    width: 557px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #727272;
- }
-
- .information{
-    flex-direction: column;
- }
-
- .p_september{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color:#46A358;
- }
-
- .p_text{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    color: #3D3D3D;
- }
-
- .p_cacti{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #727272;
- }
-   
- .read_more{
-   font-weight: 500;
-   font-size: 14px;
+    color: #46A358;
+    text-decoration: none;
+}
+ .all_plants:hover{
+   text-decoration: underline; 
+   text-decoration-thickness: 2px;
+}
+  .new_arrivals_sale{
+   font-weight: 400;
+   font-size: 15px;
    line-height: 16px;
-   color:#3D3D3D;
+   color: #3D3D3D;
    text-decoration: none;
- }
+}
+.new_arrivals_sale:hover{
+   text-decoration: underline;
+   text-decoration-thickness: 2px;
+}
+.div_list_right{
+   justify-content: space-between;
+}
+.short_by{
+   display: flex;
+   gap: 8px;
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 16px;
+   color: #3D3D3D;
+}
+.default{
+   display: flex;
+   text-decoration: none;
+   color: #3D3D3D;
+}
 
- .div_inf{
+/* main */
+main{
+   padding: 31px 105px 101px 105px;
+   display: flex;
+}
+.div__flower{
+   display: block;
+}
+.images{
+   justify-content: center;
+   align-items: center;
+   width: 258px;
+   height: 300px;
+   position: relative;
+   gap: 33px;
+}
+.images:hover{
+   border-top: 1px solid #46A358;
+}
+.discount{
+    width: 80px;
+    height: 29px;
+    top: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    background:#46A358;
+    color: #FFFFFF;
+    position: absolute;
     display: flex;
-    gap: 42px;
- }
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.6s;
+}
+.discount:hover{
+   opacity: 1;
+}
+.btn{
+   width: 125px;
+   height: 35px;
+   top: 238px;
+   left: 67px;
+   gap: 26px;
+   position: absolute;
+   background: rgba(0, 0, 0, 0. 6);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   opacity: 0;
+   transition: 0.6s;
+}
+.btn:hover{
+   opacity: 1;
+}
+.flower{
+font-size: 16px;
+font-weight: 400;
+line-height: 16px;
+color:#3D3D3D;
+}
+.price{
+font-size: 18px;
+font-weight: 700;
+line-height: 16px;
+color:#46A358;
+}
+.old_price{
+   bottom: -97px;
+   right: 190px;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 16px;
+   color: #A5A5A5;  
+   position: absolute;
+   opacity: 0;
+   transition: 0.6s;
+}
+.old_price:hover{
+   opacity: 1;
+}

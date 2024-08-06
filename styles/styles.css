@@ -1,12 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-  }
- 
-  @font-face {
+
+ @font-face {
    font-family: "CeraPro";
    src: local("CeraPro-Regular"),
      url("../fonts/CeraPro-Regular.woff2") format("woff2"),
@@ -20,27 +13,3 @@
      font-weight: 700;
      font-style: normal;
  }
-
-body{
-    font-family: "CeraPro", sans-serif;
-    width: 1050px;
-    height: 676px;
-    top: -364px;
-    left: -1080px;
-    padding: 171px 105px 101px 105px;
-    color:rgba(255, 255, 255, 1);
-  }
-
-/* header */
-header{
-   justify-content: space-between;
-    width: 838px;
-    height: 23px;
-    top: 171px;
-    left: 105px;
-    display: flex;
-    width: 838px;
-    border-width: 0px, 0px, 0px, 0px;
-    border-style: solid;
-    border-color: rgba(70, 163, 88, 1);
-}

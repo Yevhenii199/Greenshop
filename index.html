@@ -15,6 +15,7 @@
     box-sizing: border-box;
  }
 body{
+    font-family:  "Cera Pro", sans-serif;
     width: 1050px;
     height: 676px;
     top: -364px;
@@ -85,28 +86,120 @@ header{
     gap: 33px; 
     padding-top: 31px;
  }
- div{
+
+ /* barberton_daisy */
+ .shop_barberton_daisy{
     width: 258px;
     height: 350px;
     display: flex;
     flex-direction: column;
-    color: black;
  }
- .african_violet{
-    width: 258px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    color: black;
- }
- .african_violet:hover > .old_price{
-    opacity: 1;
- }
-.div_class{
+.barberton_daisy{
     width: 258px;
     height: 300px;
 }
-.discount{
+.barberton_daisy:hover{
+    border-top: 1px solid rgba(70, 163, 88, 1);
+}
+.barberton_daisy:hover > .btn_barberton_daisy{
+    opacity: 1;
+}
+.image_barberton_daisy{
+    margin: 25px 0 25px;
+    width: 250px;
+    height: 250px;
+ }
+ .btn_barberton_daisy{
+   gap: 27px;
+   margin-top: -30px;
+   margin-left: 70px;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   opacity: 0; 
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.name_barberton_daisy{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 1);
+    padding-top: 12px;
+}
+.price_barberton_daisy{
+    padding-top: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color:  rgba(70, 163, 88, 1);
+}
+
+/* angel_wing_begonia */
+.shop_angel_wing_begonia{
+    width: 258px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+ }
+.angel_wing_begonia{
+    width: 258px;
+    height: 300px;
+}
+.angel_wing_begonia:hover{
+    border-top: 1px solid rgba(70, 163, 88, 1);
+}
+.angel_wing_begonia:hover > .btn_angel_wing_begonia{
+    opacity: 1; 
+}
+.image_angel_wing_begonia{
+    margin: 25px 0 25px;
+    width: 250px;
+    height: 250px;
+ }
+ .btn_angel_wing_begonia{
+   width: 125px;
+   height: 35px;
+   gap: 27px;
+   margin-top: -30px;
+   margin-left: 70px;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   opacity: 0; 
+}
+.name_angel_wing_begonia{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 1);
+    padding-top: 12px;
+}
+.price_angel_wing_begonia{
+    padding-top: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color:  rgba(70, 163, 88, 1);
+}
+
+/* african_violet */
+.shop_african_violet{
+    width: 258px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+ }
+.african_violet{
+    width: 258px;
+    height: 300px;
+}
+.african_violet:hover{
+    border-top: 1px solid rgba(70, 163, 88, 1);
+}
+.discount_african_violet{
     padding: 7px 8px 6px 9px;
     margin-top: 14px;
     font-weight: 500;
@@ -117,45 +210,43 @@ header{
     position: absolute;
     opacity: 0;
 }
- .image{
+.african_violet:hover >  .discount_african_violet{
+    opacity: 1; 
+}
+.image_african_violet{
     margin: 25px 0 25px;
     width: 250px;
     height: 250px;
  }
- .btn{
+ .btn_african_violet{
    width: 125px;
    height: 35px;
    gap: 27px;
-   margin-top: -40px;
+   margin-top: -30px;
    margin-left: 70px;
    position: relative;
    display: flex;
    flex-direction: row;
    opacity: 0; 
 }
-.div_class:hover{
-    border-top: 1px solid rgba(70, 163, 88, 1);
+.african_violet:hover >  .btn_african_violet{
+    opacity: 1; 
 }
-.div_class:hover > .discount{
-    opacity: 1;  
+.name_african_violet{
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 1);
 }
-.div_class:hover > .btn{
-    opacity: 1;
-}
-.inf{
-font-size: 16px;
-font-weight: 400;
-line-height: 16px;
-color: rgba(61, 61, 61, 1);
-}
-.price{
-    padding-top: 6px;
+.price_african_violet{
     font-size: 18px;
     font-weight: 700;
     line-height: 16px;
     color:  rgba(70, 163, 88, 1);
+    padding-top: 6px;
 }
-.old_price{
+.old_price_african_violet{
     font-size: 18px;
     font-weight: 400;
     line-height: 16px;
@@ -164,6 +255,9 @@ color: rgba(61, 61, 61, 1);
     margin-top: -15px;
     margin-left: 80px;
     opacity: 0;
+}
+.shop_african_violet:hover >  .old_price_african_violet{
+    opacity: 1;
 }
     </style>
 </head>
@@ -184,50 +278,52 @@ color: rgba(61, 61, 61, 1);
         </a>
      </header>
      <main>
-        <div>
-            <div class="div_class">
-                <img class="image"  src="images/barberton_daisy.png" alt="Barberton Daisy">
-                <div class="btn">
+        <div class="shop_barberton_daisy" >
+            <div class="barberton_daisy">
+                <img class="image_barberton_daisy"  src="images/barberton_daisy.png" alt="flower barberton daisy">
+                <div class="btn_barberton_daisy">
+                    <img src="images/log_shopping.svg" alt="shopping">
+                    <img src="images/log_like.svg" alt="like">
+                    <img src="images/log_search.svg" alt="search">
+                </div>
+            </div>
+            <p class="name_barberton_daisy">Barberton Daisy</p>
+            <p class="price_barberton_daisy">$119.00</p>
+        </div>
+        <div class="shop_angel_wing_begonia" >
+            <div class="angel_wing_begonia">
+                <img class="image_angel_wing_begonia"  src="images/begonia.png" alt="Angel Wing Begonia">
+                <div class="btn_angel_wing_begonia">
                     <img src="images/log_shopping.svg" alt="">
                     <img src="images/log_like.svg" alt="">
                     <img src="images/log_search.svg" alt="">
                 </div>
             </div>
-            <p class="inf">Barberton Daisy</p>
-            <p class="price">$119.00</p>
+            <p class="name_angel_wing_begonia">Angel Wing Begonia</p>
+            <p class="price_angel_wing_begonia">$169.00</p>
         </div>
-        <div>
-            <div class="div_class">
-                <img class="image"  src="images/begonia.png" alt="Angel Wing Begonia">
-                <div class="btn">
-                    <img src="images/log_shopping.svg" alt="">
-                    <img src="images/log_like.svg" alt="">
-                    <img src="images/log_search.svg" alt="">
-                </div>
-            </div>
-            <p class="inf">Angel Wing Begonia</p>
-            <p class="price">$169.00</p>
-        </div>
-        <div class="african_violet">
-            <div class="div_class">
-                <p class="discount"  >
+        <div class="shop_african_violet">
+            <div class="african_violet">
+                <p class="discount_african_violet"  >
                     13% OFF
                 </p>
-                <img class="image"  src="images/african_violet.png" alt="African Violet">
-                <div class="btn">
+                <img class="image_african_violet"  src="images/african_violet.png" alt="African Violet">
+                <div class="btn_african_violet">
                     <img src="images/log_shopping.svg" alt="">
                     <img src="images/log_like.svg" alt="">
                     <img src="images/log_search.svg" alt="">
                 </div>
             </div>
-            <p class="inf">
+            <p class="name_african_violet">
                 African Violet
             </p>
-            <p class="price">
+            <p class="price_african_violet">
                 $199.00
             </p>
-            <p class="old_price" >
-                <s>$229.00</s>
+            <p class="old_price_african_violet" >
+                <s>
+                    $229.00
+                </s>
             </p>
         </div>
      </main>

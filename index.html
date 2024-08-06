@@ -6,105 +6,230 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+ }
+body{
+    width: 1050px;
+    height: 676px;
+    top: -364px;
+    left: -1080px;
+    padding: 171px 105px 101px 105px;
+    background: rgba(255, 255, 255, 1);
+ }
+ /* header */
+header{
+    display: flex;
+    width: 838px;
+    height: 23px;
+    border: none;
+ }
+ .all_plants{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    text-decoration: none;
+    color: rgba(70, 163, 88, 1);
+ }
+ .all_plants:hover{
+    text-decoration: underline; 
+    text-decoration-thickness: 2px;
+ }
+ .new_arrivals{
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 16px;
+     text-decoration: none;
+     padding-left: 37px;
+     color: rgba(61, 61, 61, 1);
+ }
+ .new_arrivals:hover{
+    text-decoration: underline; 
+    text-decoration-thickness: 2px;
+ }
+ .sale{
+    padding-left: 40px;
+     font-size: 15px;
+     font-weight: 400;
+     line-height: 16px;
+     text-decoration: none;
+     color: rgba(61, 61, 61, 1);
+ }
+ .sale:hover{
+    text-decoration: underline; 
+    text-decoration-thickness: 2px;
+ }
+ .short_by_default_sorting{
+    display: flex;
+    font-weight: 400;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 16px;
+    padding-left: 385px;
+    color:rgba(61, 61, 61, 1);
+ }
+ /* main */
+ main{
+    display: flex;
+    width: 840px;
+    height: 350px;
+    top: 225px;
+    left: 105px;
+    gap: 33px; 
+    padding-top: 31px;
+ }
+ div{
+    width: 258px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+ }
+ .african_violet{
+    width: 258px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+ }
+ .african_violet:hover > .old_price{
+    opacity: 1;
+ }
+.div_class{
+    width: 258px;
+    height: 300px;
+}
+.discount{
+    padding: 7px 8px 6px 9px;
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: rgba(70, 163, 88, 1);
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    opacity: 0;
+}
+ .image{
+    margin: 25px 0 25px;
+    width: 250px;
+    height: 250px;
+ }
+ .btn{
+   width: 125px;
+   height: 35px;
+   gap: 27px;
+   margin-top: -40px;
+   margin-left: 70px;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   opacity: 0; 
+}
+.div_class:hover{
+    border-top: 1px solid rgba(70, 163, 88, 1);
+}
+.div_class:hover > .discount{
+    opacity: 1;  
+}
+.div_class:hover > .btn{
+    opacity: 1;
+}
+.inf{
+font-size: 16px;
+font-weight: 400;
+line-height: 16px;
+color: rgba(61, 61, 61, 1);
+}
+.price{
+    padding-top: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color:  rgba(70, 163, 88, 1);
+}
+.old_price{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(165, 165, 165, 1);
+    position: relative;
+    margin-top: -15px;
+    margin-left: 80px;
+    opacity: 0;
+}
+    </style>
 </head>
 <body>
      <header>
-        <div class="div_list_left">
-           <a class="all_plants" href="#">
-             All Plants
-           </a>
-           <a class="new_arrivals_sale" href="#">
-             New Arrivals
-           </a>
-           <a class="new_arrivals_sale" href="#">
-             Sale
-           </a>
-        </div>
-        <div class="div_list_right" >
-            <p class="short_by">
-                Short by:
-                <a class="default" href="#">
-                    Default sorting
-                    <img src="images/default_sorting.svg" alt="default sorting">
-                </a>
-            </p>
-        </div>
+        <a class="all_plants"  href="#">
+            All Plants
+        </a>
+        <a  class="new_arrivals"  href="#">
+            New Arrivals
+        </a>
+        <a class="sale"  href="#">
+            Sale
+        </a>
+        <a class="short_by_default_sorting" href="#">
+            Short by: Default sorting
+            <img src="images/default_sorting.svg" alt="">
+        </a>
      </header>
      <main>
-        <div class="div__flower">
-            <div class="images">
-                <img src="images/barberton_daisy.png" alt="barberton daisy">
+        <div>
+            <div class="div_class">
+                <img class="image"  src="images/barberton_daisy.png" alt="Barberton Daisy">
                 <div class="btn">
-                    <a href="#">
-                        <img src="images/log_shopping.svg" alt="shopping">
-                    </a>
-                    <a href="#">
-                        <img src="images/log_like.svg" alt="like">
-                    </a>
-                    <a href="#">
-                        <img src="images/log_search.svg" alt="search">
-                    </a>       
+                    <img src="images/log_shopping.svg" alt="">
+                    <img src="images/log_like.svg" alt="">
+                    <img src="images/log_search.svg" alt="">
                 </div>
             </div>
-                <p class="flower">
-                    Barberton Daisy
-                </p>
-                <p class="price">
-                    $119.00
-                </p>
+            <p class="inf">Barberton Daisy</p>
+            <p class="price">$119.00</p>
         </div>
-        <div class="div__flower">
-            <div class="images">
-                <img src="images/begonia.png" alt="angel wing begonia">
+        <div>
+            <div class="div_class">
+                <img class="image"  src="images/begonia.png" alt="Angel Wing Begonia">
                 <div class="btn">
-                    <a href="#">
-                        <img src="images/log_shopping.svg" alt="shopping">
-                    </a>
-                    <a href="#">
-                        <img src="images/log_like.svg" alt="like">
-                    </a>
-                    <a href="#">
-                        <img src="images/log_search.svg" alt="search">
-                    </a>       
+                    <img src="images/log_shopping.svg" alt="">
+                    <img src="images/log_like.svg" alt="">
+                    <img src="images/log_search.svg" alt="">
                 </div>
             </div>
-                <p class="flower">
-                    Angel Wing Begonia
-                </p>
-                <p class="price">
-                    $169.00
-                </p>
+            <p class="inf">Angel Wing Begonia</p>
+            <p class="price">$169.00</p>
         </div>
-        <div class="div__flower">
-            <div class="images">
-                <p class="discount">
+        <div class="african_violet">
+            <div class="div_class">
+                <p class="discount"  >
                     13% OFF
                 </p>
-                <img src="images/african_violet.png" alt="african violet">
+                <img class="image"  src="images/african_violet.png" alt="African Violet">
                 <div class="btn">
-                    <a href="#">
-                        <img src="images/log_shopping.svg" alt="shopping">
-                    </a>
-                    <a href="#">
-                        <img src="images/log_like.svg" alt="like">
-                    </a>
-                    <a href="#">
-                        <img src="images/log_search.svg" alt="search">
-                    </a>       
+                    <img src="images/log_shopping.svg" alt="">
+                    <img src="images/log_like.svg" alt="">
+                    <img src="images/log_search.svg" alt="">
                 </div>
             </div>
-                <p class="flower">
-                    African Violet
-                </p>
-                <p class="price">
-                    $199.00
-                </p>
-                <p class="old_price" >
-                    <del>
-                       $229.00
-                    </del>
-                </p>
-            </div>
+            <p class="inf">
+                African Violet
+            </p>
+            <p class="price">
+                $199.00
+            </p>
+            <p class="old_price" >
+                <s>$229.00</s>
+            </p>
+        </div>
      </main>
 </body>
 </html>

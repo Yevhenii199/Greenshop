@@ -240,7 +240,7 @@ li {
 }
 
 .menu li:last-child::after {
-    content: url(/images/right.png);
+    content: url(/Greenshop/images/right.png);
     position: absolute;
     right: 17px;
     height: 10px;
@@ -250,7 +250,7 @@ li {
 }
 
 .menu li:last-child:hover::after {
-    content: url(/images/left.png);
+    content: url(/Greenshop/images/left.png);
 }
 
 .menu .inf {
